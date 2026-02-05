@@ -1,0 +1,45 @@
+.questionCard {
+  border: 1px solid rgba(119, 136, 153, 0.35);
+  border-radius: 18px;
+  padding: 14px 16px;
+  background: #fafbfd;
+}
+
+.questionText {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+.options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.option {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(119, 136, 153, 0.35);
+  border-radius: 14px;
+  background: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.08s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+.option:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(24, 25, 47, 0.08);
+  border-color: rgba(119, 136, 153, 0.55);
+}
+.option.isSelected {
+  border-color: rgba(76, 187, 76, 0.9);
+  box-shadow: 0 6px 18px rgba(76, 187, 76, 0.15);
+}
+.option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: rgb(76, 187, 76);
+  cursor: pointer;
+}

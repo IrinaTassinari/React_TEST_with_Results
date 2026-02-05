@@ -1,0 +1,51 @@
+.app{
+    border: 1px solid rgba(119, 136, 153, 0.5);
+    border-radius: 30px;
+    margin: 50px;
+    padding: 28px 32px;
+    max-width: 1100px;
+    background: #fff;
+}
+h1{
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 32px;
+    letter-spacing: 0.2px;
+}
+.flexBox{
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+.left {
+  flex: 1;
+  min-width: 0;
+}
+.right {
+  width: 360px;
+  flex: 0 0 360px;
+}
+.questionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.btnResult{
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: rgb(116, 226, 116);
+    font-weight: 700;
+    width: 100%;
+    transition: transform 0.08s ease, background-color 0.12s ease, box-shadow 0.12s ease;
+}
+.btnResult:hover{
+   background-color: rgb(76, 187, 76);
+   box-shadow: 0 10px 22px rgba(76, 187, 76, 0.18);
+}
+.btnResult:active {
+  transform: translateY(1px);
+}
+
